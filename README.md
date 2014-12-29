@@ -1,7 +1,7 @@
 Thingdom PHP Library
 ===========
 
-PHP library for v1.1 of the [Thingdom.io API](https://api.thingdom.io/1.1).
+PHP library for v1.1 of the [Thingdom.io API](https://thingdom.io/).
 
 ## What is Thingdom?
 
