@@ -8,7 +8,7 @@
  * @copyright  2014-2015 MTS Systems
  * @license    http://www.opensource.org/licenses/mit-license.html MIT License
  * @version    1.1
- * @link       https://github.com/thingdomio/php-thingdom
+ * @link       https://github.com/thingdomio/thingdom-php
  * @website    https://thingdom.io
  */
 
