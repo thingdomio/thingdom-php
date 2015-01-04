@@ -29,6 +29,10 @@ class Thingdom
 
     public function __construct()
     {
+        if( !$this->checkCurl() ) {
+            throw new Exception('cURL is not enabled on this server');
+        }
+
         $this->authenticate();
     }
 
@@ -112,6 +116,11 @@ class Thingdom
         $response = $this->postToThingdom($endpoint="token", $data);
         $this->token = $response['application_token'];
     }
+
+    private function checkCurl()
+    {
+        return function_exists('curl_version');
+    }    
 }
 
 class Thing extends Thingdom {
