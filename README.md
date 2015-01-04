@@ -15,6 +15,19 @@ PHP library for v1.1 of the [Thingdom.io API](https://thingdom.io/).
 
 </p>
 
+## Requirements
+You must have cURL for PHP installed in order to use this library.
+
+CentOS:
+```
+sudo yum install php5-curl
+```
+
+Ubuntu:
+```
+sudo apt-get install php5-curl
+```
+
 ## Getting started
 ```
 <?php
