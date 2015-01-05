@@ -17,7 +17,7 @@ class Thingdom
     const   API_URL         = 'https://api.thingdom.io/1.1/';
     const   API_ERROR       = 'error';
     const   API_SUCCESS     = 'success';
-    const   DEVICE_SECRET   = 'php';
+    const   DEVICE_SECRET   = 'none';
 
     private $apiSecret      = 'YOUR_API_SECRET_HERE';
     public  $token;
