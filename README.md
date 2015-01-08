@@ -30,12 +30,47 @@ sudo apt-get install php5-curl
 
 ## Getting started
 
-First things first, [Get your free API access](https://thingdom.io/sign-up), download this library and then try the following code.
+First things first, [Get your free API access](https://thingdom.io/sign-up).  Next, if your not using composer, download this library and then try the following code.
 
 ```
 <?php
 
 require_once('Thingdom.php');
+
+// instantiate Thingdom object and authenticate
+$thingdom = new Thingdom('YOUR_API_SECRET');
+
+// look-up Thing and get back object
+$thing = $thingdom->getThing('YOUR_THING_NAME');
+
+// send a feed message
+$thing->feed('FEED_CATEGORY', 'MESSAGE');
+
+// send a status update
+$thing->status('KEY', 'VALUE');
+
+```
+
+If you would like to use composer instead then follow these directions.
+
+1. Install [composer](https://getcomposer.org/doc/00-intro.md)
+2. Create a new composer.json file with awelters/hatebase as a dependency (or add to your project's existing composer.json file)
+
+```
+{
+    "require": {
+    	""thingdomio/thingdom-php": "dev-master"
+    }
+}
+```
+
+4. Use composer to [install the dependencies](https://getcomposer.org/doc/00-intro.md#using-composer)
+5. Go ahead and try it out the following code.
+
+```
+<?php
+
+require_once __DIR__ . '/vendor/autoload.php'; // Autoload files using Composer autoload
 
 // instantiate Thingdom object and authenticate
 $thingdom = new Thingdom('YOUR_API_SECRET');
