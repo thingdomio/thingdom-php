@@ -19,7 +19,7 @@ class Thingdom
     const   API_SUCCESS     = 'success';
     const   DEVICE_SECRET   = 'none';
 
-    private $apiSecret      = 'YOUR_API_SECRET_HERE';
+    private $apiSecret;
     public  $token;
     public  $lastError = null;
 
@@ -27,11 +27,15 @@ class Thingdom
     // Constructor / Public Methods
     //
 
-    public function __construct()
+    public function __construct($apiSecret)
     {
         if( !$this->checkCurl() ) {
             throw new Exception('cURL is not enabled on this server');
+        } else if(empty($apiSecret)) {
+            throw new Exception('API secret missing in call to constructor');
         }
+
+        $this->apiSecret = $apiSecret;
 
         $this->authenticate();
     }

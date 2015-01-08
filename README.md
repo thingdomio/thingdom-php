@@ -29,13 +29,16 @@ sudo apt-get install php5-curl
 ```
 
 ## Getting started
+
+First things first, [Get your free API access](https://thingdom.io/sign-up), download this library and then try the following code.
+
 ```
 <?php
 
 require_once('Thingdom.php');
 
 // instantiate Thingdom object and authenticate
-$thingdom = new Thingdom();
+$thingdom = new Thingdom('YOUR_API_SECRET');
 
 // look-up Thing and get back object
 $thing = $thingdom->getThing('YOUR_THING_NAME');
