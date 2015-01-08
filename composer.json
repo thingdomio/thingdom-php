@@ -1,0 +1,32 @@
+{
+    "name": "thingdomio/thingdom-php",
+    "type": "library",
+    "description": "The official PHP library for the Thingdom.io API",
+    "keywords": ["thingdom", "api", "curl"],
+    "homepage": "https://github.com/thingdomio/thingdom-php",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Andrew Frenz",
+            "email": "andrew.frenz@mts.com",
+            "homepage": "http://andrewfrenz.com"
+        },
+        {
+            "name": "Nicholas Kreidberg",
+            "email": "niczak@gmail.com",
+            "homepage": "http://niczak.com"
+        }
+    ],
+
+    "require": {
+        "php": ">=5.3.3",
+        "ext-curl": "*"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "Thingdom": ""
+        }
+    }
+}
