@@ -118,7 +118,12 @@ class Thingdom
         );
 
         $response = $this->postToThingdom($endpoint="token", $data);
-        $this->token = $response['application_token'];
+
+        if(empty($response['application_token'])) {
+            throw new Exception('Invalid application token');
+        } else {
+            $this->token = $response['application_token'];
+        }        
     }
 
     private function checkCurl()
