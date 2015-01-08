@@ -54,18 +54,18 @@ $thing->status('KEY', 'VALUE');
 If you would like to use composer instead then follow these directions.
 
 1. Install [composer](https://getcomposer.org/doc/00-intro.md)
-2. Create a new composer.json file with awelters/hatebase as a dependency (or add to your project's existing composer.json file)
+2. Create a new composer.json file with thingdomio/thingdom-php as a dependency (or add to your project's existing composer.json file)
 
 ```
 {
     "require": {
-    	""thingdomio/thingdom-php": "dev-master"
+    	"thingdomio/thingdom-php": "dev-master"
     }
 }
 ```
 
 4. Use composer to [install the dependencies](https://getcomposer.org/doc/00-intro.md#using-composer)
-5. Go ahead and try it out the following code.
+5. Go ahead and try out the following code.
 
 ```
 <?php
