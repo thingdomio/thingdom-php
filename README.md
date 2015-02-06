@@ -9,8 +9,6 @@ PHP library for v1.1 of the [Thingdom.io API](https://thingdom.io/).
 
 <p align="center">
 
-<img src="https://thingdom.io/images/profile/5.png?raw=true" height="400px" />
-
 <img src="https://thingdom.io/images/profile/2.png?raw=true" height="400px" />
 
 </p>
